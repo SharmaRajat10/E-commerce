@@ -1,9 +1,13 @@
-const InputField = ({ type, placeholder }) => {
+const InputField = ({ type, placeholder, name, value, onChange }) => {
   return (
     <input
+      className="w-full border border-gray-300 rounded p-2 mb-4"
       type={type}
+      name={name}
       placeholder={placeholder}
-      className="w-full px-4 py-2 border border-black placeholder-gray-500 focus:outline-none focus:ring focus:ring-black mb-4"
+      value={value}
+      onChange={onChange}
+      required
     />
   );
 };

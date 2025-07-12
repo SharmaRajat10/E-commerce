@@ -13,7 +13,7 @@ import Herosection from "../components/Herosection";
 import BestCollections from "../components/BestCollections";
 import SupportAndSubscribe from "../components/SupportAndSubscribe";
 import Footer from "../components/Footer";
-import Aboutpage from "../components/Aboutpage";
+import AddToCart from "../components/AddToCart";
 
 const productData = [
   {
@@ -68,7 +68,7 @@ const productData = [
   },
 ];
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <main className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <Herosection />
@@ -76,8 +76,9 @@ const Home = () => {
       <BestCollections products={productData.slice(0, 5)} />
       <SupportAndSubscribe />
       <Footer />
+      <AddToCart />
     </main>
   );
 };
 
-export default Home;
+export default Dashboard;
