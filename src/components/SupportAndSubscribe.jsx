@@ -5,7 +5,6 @@ import { IoHeadsetOutline } from "react-icons/io5";
 const SupportAndSubscribe = () => {
   return (
     <section className="px-6 md:px-16 py-14 bg-white">
-      {/* Policy Icons */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center mb-16">
         <div>
           <MdAutorenew size={40} className="mx-auto text-black" />
