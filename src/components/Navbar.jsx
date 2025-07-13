@@ -16,18 +16,18 @@ const Navbar = () => {
           <img src={logo} alt="Chlothzy Logo" className="w-36 object-contain" />
         </div>
         <nav className="hidden md:flex space-x-6 font-medium">
-          <a href="/" className="hover:underline">
+          <Link to="/" className="hover:underline">
             HOME
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link to="#" className="hover:underline">
             COLLECTION
-          </a>
-          <a href="/about" className="hover:underline">
+          </Link>
+          <Link to="/about" className="hover:underline">
             ABOUT
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link to="#" className="hover:underline">
             CONTACT
-          </a>
+          </Link>
         </nav>
         <div className="flex space-x-4 text-lg">
           <span>
@@ -53,18 +53,18 @@ const Navbar = () => {
         </div>
         {mobileOpen && (
           <div className="absolute top-full left-0 w-full bg-white border-t flex flex-col px-6 py-4 space-y-3 text-sm font-medium md:hidden z-50">
-            <a href="#" className="hover:underline">
+            <Link to="#" className="hover:underline">
               HOME
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link to="#" className="hover:underline">
               COLLECTION
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link to="/about" className="hover:underline">
               ABOUT
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link to="#" className="hover:underline">
               CONTACT
-            </a>
+            </Link>
           </div>
         )}
       </header>

@@ -53,7 +53,7 @@ const LoginPage = () => {
             onChange={handleChange}
           />
           <div className="w-full flex justify-between text-sm text-gray-600 mb-4">
-            <a href="#">Forgot your password?</a>
+            <Link to="#">Forgot your password?</Link>
             <Link to="/signup">Create account</Link>
           </div>
           <button type="submit" className="bg-black text-white py-2 px-8 mt-4">

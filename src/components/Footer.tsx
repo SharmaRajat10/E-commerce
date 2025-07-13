@@ -1,5 +1,6 @@
 import { FaInstagram } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,24 +19,24 @@ const Footer = () => {
           <h4 className="text-xl text-black font-medium mb-5">COMPANY</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="#" className="hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/about" className="hover:underline">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="#" className="hover:underline">
                 Delivery
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="#" className="hover:underline">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
