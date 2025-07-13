@@ -4,10 +4,10 @@ import Navbar from "./components/Navbar";
 
 import SignupPage from "./pages/Signup";
 import LoginPage from "./pages/Login";
-import Aboutpage from "./components/Aboutpage";
+import Aboutpage from "./pages/Aboutpage";
 import Dashboard from "./pages/Home";
-import CartPage from "./components/CartItem";
-import AddToCart from "./components/AddToCart";
+import CartPage from "./pages/CartPage";
+import AddToCart from "./pages/Productpage";
 
 function App() {
   return (

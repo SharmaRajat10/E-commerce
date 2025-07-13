@@ -13,7 +13,7 @@ import Herosection from "../components/Herosection";
 import BestCollections from "../components/BestCollections";
 import SupportAndSubscribe from "../components/SupportAndSubscribe";
 import Footer from "../components/Footer";
-import AddToCart from "../components/AddToCart";
+import AddToCart from "./Productpage";
 
 const productData = [
   {

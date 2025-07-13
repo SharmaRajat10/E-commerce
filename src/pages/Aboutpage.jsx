@@ -1,6 +1,6 @@
 import React from "react";
 import aboutus from "../assets/aboutus image.png";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 const Aboutpage = () => {
   return (
     <>

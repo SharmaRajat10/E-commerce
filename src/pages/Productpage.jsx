@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { IoMdStar } from "react-icons/io";
 import axios from "axios";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 
 const AddToCart = () => {
   const [selectedSize, setSelectedSize] = useState(null);
@@ -16,15 +16,19 @@ const AddToCart = () => {
     if (!selectedSize) return;
 
     const cartItem = {
+      productId: product._id,
       name: product.name,
       price: product.price,
       image: product.image,
       size: selectedSize,
     };
+    console.log("Sending productId:", product._id);
+    // console.log(cartItem)
 
     try {
       const res = await axios.post("http://localhost:3000/cart", cartItem);
       console.log("Item added:", res.data);
+      console.log(cartItem);
 
       navigate("/cart", { state: cartItem });
     } catch (err) {
