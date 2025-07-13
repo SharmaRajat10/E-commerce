@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 import axios from "axios";
 
 const CartPage = () => {
-  const [cartItems, setCartItems] = useState([]); // Array of items
+  const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/cart");
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/cart`);
         setCartItems(res.data);
         setLoading(false);
       } catch (error) {
@@ -31,7 +31,7 @@ const CartPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/cart/${id}`);
+      await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/cart/${id}`);
       setCartItems(cartItems.filter((item) => item._id !== id));
     } catch (err) {
       console.error("Delete failed:", err.message);

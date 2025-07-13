@@ -26,7 +26,10 @@ const AddToCart = () => {
     // console.log(cartItem)
 
     try {
-      const res = await axios.post("http://localhost:3000/cart", cartItem);
+      const res = await axios.post(
+        `${import.meta.env.VITE_BACKEND_URL}/cart`,
+        cartItem
+      );
       console.log("Item added:", res.data);
       console.log(cartItem);
 
