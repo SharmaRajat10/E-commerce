@@ -5,7 +5,8 @@ const LatestCollections = ({ products }) => {
   const navigate = useNavigate();
 
   const handleClick = (product) => {
-    console.log("click");
+    // console.log("click");
+    console.log(product);
 
     navigate("/add-to-cart", { state: product });
   };
